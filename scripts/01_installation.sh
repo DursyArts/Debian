@@ -27,5 +27,13 @@ chsh -s $(which zsh)
 zsh --version
 echo "To use zsh you have to restart the current user session."
 
+
+mkdir ~/.local
+mkdir ~/.local/share
+mkdir ~/.local/share/tldr
+
+apt install tldr man && echo "Installed tldr and man pages."
+apt install wget curl && echo "Installed wget and curl."
+
 # Addind a new user
 useradd -m -s /bin/zsh leo && echo "Added User 'leo'."
