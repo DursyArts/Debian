@@ -3,7 +3,7 @@
 # checking if the Script is being run as root user
 if [ "$UID" -ne 0 ]; then
     echo "This script is supposed to be run as root."
-    echo "Debian doesnt ship with 'sudo'. This will be configured with this script too.
+    echo "Debian doesnt ship with 'sudo'. This will be configured with this script too."
     exit 1
 fi
 
